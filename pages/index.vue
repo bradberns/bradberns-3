@@ -1,66 +1,44 @@
 <script setup lang="ts">
-  const title = ref('Brad BernsXXX - Home')
-  const description = ref('A list of all my posts')
-  const { data: articles } = await useAsyncData('articles',
-      () => queryContent('articles')
-      .sort({ number: -1 })
-      .find()
-  )
-  const isOpen = ref(false)
-  const items = [
-    'https://res.cloudinary.com/thecga/image/upload/v1710031183/Models/mads/mads-1-web.jpg',
-    'https://res.cloudinary.com/thecga/image/upload/v1710034592/Models/mads/mads-2_ehnvil_1976c4.jpg',
-    
-  ]
+  const { path } = useRoute();
+  // Set the meta
+  const baseUrl = 'https://bradberns.netlify.app';
+  const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
+// Page Head properties
+useHead({ 
+  title: 'Home | BradBernsXXX',
+  meta: [
+    { name: 'author', content: 'Brad BernsXXX' },
+    { name: 'description', content: 'Whats New' },
+    { property: 'article:published_time', content: 'March 20th, 2024' },
+  // OG
+    { hid: 'og:title', property: 'og:title', content: 'Home | BradBernsXXX' },
+    { hid: 'og:url', property: 'og:url', content: canonicalPath },
+    { hid: 'og:description', property: 'og:description', content: 'Whats New' },
+    { hid: 'og:image', name: 'image', property: 'og:image', content: "https://res.cloudinary.com/thecga/image/upload/c_scale,h_400/v1674781629/SullenYellow-_rkthmn.webp" },
+    { hid: 'og:type', property: 'og:type', content: 'Article' },
+    { hid: 'og:image:type', property: 'og:image:type', content: `image/webp}` },
+    { hid: 'og:image:alt', property: 'og:image:alt', content: 'Brad BernsXXX' },
+// Twitter
+{ hid: 'twitter:card', name: 'twitter:card', content: 'Summary' },
+    { hid: 'twitter:title', name: 'twitter:title', content: 'Home | BradBernsXXX' },
+    { hid: 'twitter:url', name: 'twitter:url', content: canonicalPath },
+    { hid: 'twitter:description', name: 'twitter:description', content: 'Whats New' },
+    { hid: 'twitter:image', name: 'twitter:image', content: 'https://res.cloudinary.com/thecga/image/upload/c_scale,h_400/v1674781629/SullenYellow-_rkthmn.webp' },
+    { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'Brad BernsXXX' }
+  ],
+  link: [
+    { hid: 'canonical', rel: 'canonical', href: canonicalPath }
+    ],
+}); 
+  
 </script>
 
 <template>
-  <Head>
-      <Title>{{title}}</Title>
-      <Meta name="description" :content="description" />
-  </Head>
-  <div id="blog" class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
-    <!-- <UCarousel 
-      indicators
-      v-slot="{ item }"
-      :items="items"
-      :ui="{
-        item: 'basis-full',
-        container: 'rounded-lg overflow-hidden '
-      }"
-      :prev-button="{
-        color: 'gray',
-        icon: 'i-heroicons-arrow-left-20-solid',
-        class: '-left-5'
-      }"
-      :next-button="{
-        color: 'gray',
-        icon: 'i-heroicons-arrow-right-20-solid',
-        class: '-right-5'
-      }"
-      arrows
-      class=" w-72 mx-auto borer-primary "
-    >
-      <img :src="item" class="w-full" draggable="false">
-    </UCarousel> -->
-    <section class="text-black">
+  <main id="blog" class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
+    <section id="welcome" class="text-black">
         <div class="flex my-3">
             <h1 class="mx-auto text-3xl">What's New</h1>
         </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing 
-        elit. Curabitur aliquam, dolor et bibendum rhoncus, 
-        quam metus mollis diam, quis commodo massa tellus 
-        ac nibh. Suspendisse sagittis magna vitae lectus 
-        hendrerit maximus. Curabitur sit amet vehicula velit. 
-        Nunc ullamcorper rhoncus elit id gravida. Quisque 
-        velit nunc, maximus sed erat vitae, dapibus cursus 
-        lectus. Fusce libero nibh, faucibus in lobortis 
-        sit amet, scelerisque ac odio. Pellentesque mi enim, 
-        imperdiet ac tincidunt luctus, blandit eu orci. 
-        Suspendisse maximus facilisis mollis. Mauris pharetra 
-        sapien sed nibh cursus porttitor. 
-      </p>
     </section>
     <section id="blogPosts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
       mt-2 sm:gap-10 mx-2 mb-1">
@@ -86,32 +64,6 @@
             </div>
         </ContentList>
     </section>
-    <div id="popOverButton" class="mx-auto">
-        <div class=" md:mx-48 mx-12">
-            <UPopover :popper="{ placement: 'top' }">
-                <UButton class="text-2xl" size="lg"
-                    block color="orange"
-                    label="Get your videos here"/>
-                    <template #panel>
-                        <div class="p-4">
-                            <div>
-                                <CTA />
-                            </div>
-                        </div>
-                    </template>
-            </UPopover>
-    </div>
-    </div>
-  </div>
+    <GetVids id="getVids"/>
+  </main>
 </template>
-<style>
-  .page-enter-active,
-.page-leave-active {
-  transition: all 0.7s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>

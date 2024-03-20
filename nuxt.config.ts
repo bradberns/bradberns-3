@@ -12,7 +12,9 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
   ],
-  
+  content: {
+    
+  },
   image: {
     // Options
     dir: 'public/img/',

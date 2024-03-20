@@ -6,7 +6,7 @@
         <h3 class="text-center text-3xl font-normal text-white">
             &copy; BradBernsxxx
             <br class="md:hidden"/>
-            2015 - 2023
+            2015 - 2024
         </h3>    
     </section>
   </template>
