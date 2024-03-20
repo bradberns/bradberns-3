@@ -36,7 +36,7 @@ useHead({
 <template>
   <main id="blog" class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
     <section id="welcome" class="text-black">
-        <div class="flex my-3">
+        <div class="flex mt-1 mb-3">
             <h1 class="mx-auto text-3xl">What's New</h1>
         </div>
     </section>

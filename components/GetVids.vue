@@ -6,7 +6,7 @@
     <div id="aboutPopOverButton" class="mx-auto">
         <div class=" md:mx-36 mx-12">
             <UPopover :popper="{ placement: 'top' }">
-                <UButton class="text-2xl mb-2" size="lg"
+                <UButton class="text-xl mb-2" size="md"
                     block color="orange"
                     label="Get your videos here"/>
                     <template #panel>

@@ -50,50 +50,27 @@
   <main>
     <article>
       <ContentDoc v-slot="{ doc }">
-        <div class="text-center text-slate-200">
-            <!-- <h1 class="my-2 text-white text-center text-4xl">
-              {{ doc.title }}
-            </h1>
-            <span class="mb-2 text-lg italic quote">
-                {{ doc.date }}
-            </span> -->
-            <!-- <div class="mx-4">
-              <img
-                :src="doc.img"
-                :alt="doc.alt"
-                class="rounded-md w-9/12 mx-auto my-2 lg:my-3"
-            />
-            </div> -->
-        </div>
-        <div class="m-2 md:mx-4 bg-neutral-50 
-              bg-opacity-70 rounded-md">
-              <h1 class=" pt-4 mb-2 text-center text-4xl">
-              {{ doc.title }}
-            </h1>
-            <div class=" text-center">
-              <span class="tag">
-                {{ doc.date }} 
-              </span>
-              <span class="tag">
-                by: {{ doc.author.name }}
-              </span>
-            </div>
-            
-          <div class="mx-4">
-              <img
-                :src="doc.img"
-                :alt="doc.alt"
-                class=" rounded-md w-9/12 mx-auto pt-5" 
-            />
-            </div>
-          
-          <ContentRenderer class="" :value="doc" />
-          <!-- <div class="ml-20 md:mx-auto md:w-1/2 rounded-lg">
-          </div> -->
+        <div class="m-2 md:mx-4 rounded-md bg-neutral-50 
+              bg-opacity-70">
+          <h1 class=" pt-4 mb-2 text-center text-3xl">
+            {{ doc.title }}
+           </h1>
+          <div id="blogPostDate" class=" text-center">
+            <span class="tag">
+              {{ doc.date }} 
+            </span>
+          </div> 
+          <div id="blogPostImage" class="mx-4">
+            <img
+              :src="doc.img"
+              :alt="doc.alt"
+              class="rounded-lg w-9/12 mx-auto pt-5"/>
+          </div>
+          <ContentRenderer :value="doc" />
         </div>
       </ContentDoc>
+      <GetVids />
     </article>
-    <GetVids />
   </main>
 </template>
 
@@ -102,14 +79,11 @@
   @apply text-3xl py-2 font-semibold text-center;
 }
 h4{
-  @apply text-2xl font-semibold text-center mb-3 ;
+  @apply text-2xl text-center mb-3 ;
 }
 
 p {
   @apply text-black mx-4 pl-2 text-left indent-2 mb-3 text-xl;
-}
-.cta{
-  @apply mt-2
 }
 .links {
   @apply text-lg rounded-lg bg-orange-500
@@ -121,7 +95,5 @@ p {
   @apply text-base italic text-gray-900 bg-gray-100
           rounded-md px-1 pb-1 mx-1 my-2;
 }
-img.cloud{
-    @apply pt-2
-}
+
 </style>
