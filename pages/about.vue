@@ -9,6 +9,7 @@ useHead({
   meta: [
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Creator of @camgasmic. Always looking for women 18 or over to create original adult content with.' },
+    { name: "robots", content: "index, follow"},
     { property: 'article:published_time', content: 'March 3rd, 2024' },
   // OG
     { hid: 'og:title', property: 'og:title', content: 'About Me | BradBernsXXX' },

@@ -9,6 +9,7 @@ useHead({
   meta: [
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Whats New' },
+    { name: "robots", content:"index, follow"},
     { property: 'article:published_time', content: 'March 20th, 2024' },
   // OG
     { hid: 'og:title', property: 'og:title', content: 'Home | BradBernsXXX' },

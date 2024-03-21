@@ -23,6 +23,7 @@
     meta: [
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: data.value?.article?.description },
+    { name: "robots", content: "index, follow"},
     { property: 'article:published_time', content: data.value?.article?.date },
   // OG
     { hid: 'og:title', property: 'og:title', content: data.value?.article?.title },
@@ -71,6 +72,7 @@
       </ContentDoc>
       <GetVids />
     </article>
+    <PrevNext :prev="prev" :next="next"/>
   </main>
 </template>
 

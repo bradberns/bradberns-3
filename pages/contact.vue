@@ -9,6 +9,7 @@ useHead({
   meta: [
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Contact me if you are interested in creating content.' },
+    { name: "robots", content: "index, follow"},
     { property: 'article:published_time', content: 'March 3rd, 2024' },
   // OG
     { hid: 'og:title', property: 'og:title', content: 'Contact Me | BradBernsXXX' },
@@ -50,7 +51,7 @@ useHead({
       </p>
       <div class=" text-center -mt-2 mb-3">
         <UButton class="text-xl " size="md"
-        color="blue" to="" target="_blank"
+        color="blue" to="mailto:bradbernsxxx@yahoo.com?subject=I am interested in working with you" target="_blank"
           icon="i-heroicons-pencil-square" label="Contact Me"/>
       </div>
     </div>
