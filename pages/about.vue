@@ -34,8 +34,8 @@ useHead({
 </script>
 
 <template>
-  <main class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70"> 
-    <div class="w-full text-left py-1 pt-1 px-2 text-black">
+  <main class="mb-3 mx-3 mt-12 rounded-lg py-2 bg-neutral-50 bg-opacity-70"> 
+    <div class="w-full text-left py-1 pt-2 px-2 text-black">
       <h1 class="text-3xl text-center">About Me</h1>
       <div id="profileImg" class="w-full sm:w-1/3 mx-auto mt-3 mb-2">
         <!-- profile image -->
@@ -43,7 +43,7 @@ useHead({
               class="rounded-xl w-96 mx-auto ml-0 md:ml-3 md:w-full"
               alt=""/>
       </div>
-        <p class="page mx-2 italic mb-1">
+        <p class="m-2 italic indent-3">
           Creator of <a class="text-blue-800 hover:underline" 
                 href="https://twitter.com/camgasmic">
                 @camgasmic.
@@ -51,7 +51,7 @@ useHead({
             Always looking for women 18
           or over to create original adult content with.
         </p>
-        <p class="page mx-2 -mt-3">
+        <p class="m-2 indent-3">
           I have been promoting adult #NSFW models for quite some time. Hence
           why <span class="highlight">@TheCamgirlArmy</span> had over 30K followers 
           <span class="highlight">
@@ -60,7 +60,7 @@ useHead({
           And now my circumstances have changed. I am on the look out for models
           to collaborate with.
         </p>
-        <p class="page mx-2 -mt-3">
+        <p class="m-2 indent-3">
           I understand, all to well, how difficult it can be to find someone to
           shoot content; and not try to screw you over in some shape or form.
           And then you have people om social media jumping into your DM's.
@@ -69,7 +69,7 @@ useHead({
           random person "voluteering", you have zero idea what it takes to
           create adult content. So please stop doig it.
         </p>
-        <p class="page mx-2 -mt-3">
+        <p class="m-2 indent-3">
           When I do collaborate, there are a few things I won't compromise.
           First and foremost; anyone involved needs to sign waivers and present
           a valid photo ID, before we move forward. Secondly, we need to agree

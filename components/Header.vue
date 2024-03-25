@@ -4,16 +4,20 @@ const route = useRoute()
 const links = [
   [{
     label: 'Brad Bernsxxx',
+    labelClass: 'md:text-xl',
     icon: 'i-heroicons-home',
     to: '/'
   }, {
     label: 'About',
+    labelClass: 'md:text-xl',
     icon: 'i-heroicons-question-mark-circle',
     to: `/about`
   },
   ], 
-  [{
+  [
+    {
     label: 'Contact',
+    labelClass: 'md:text-xl',
     icon: 'i-heroicons-light-bulb',
     to: '/contact'
   }, 
@@ -22,10 +26,10 @@ const links = [
 </script>
 
 <template>
-    <nav id="navigation" class=" px-1 bg-white">
+    <nav id="navigation" class=" fixed top-0 w-full bg-white">
       <UHorizontalNavigation 
         :links="links"
-        class="mb-2 border-b
+        class=" pr-3 mx-2
             border-gray-200 
             dark:border-gray-800" />  
     </nav>

@@ -46,9 +46,9 @@
 
 <template>
   <main>
-    <article>
+    <article class=" p-2 mt-12">
       <ContentDoc v-slot="{ doc }">
-        <div class="m-2 md:mx-4 rounded-md bg-neutral-50 
+        <div class="m-3 md:mx-4 rounded-md bg-neutral-50 
               bg-opacity-70">
           <h1 class=" pt-4 mb-2 text-center text-3xl">
             {{ doc.title }}
@@ -71,25 +71,3 @@
     </article>
   </main>
 </template>
-
-<style>
-  h3 {
-  @apply text-3xl py-2 font-semibold text-center;
-  }
-  h4{
-    @apply text-2xl text-center mb-3 ;
-  }
-  p {
-    @apply text-black mx-4 pl-2 text-left indent-2 mb-3 text-xl;
-  }
-  .links {
-    @apply text-lg rounded-lg bg-orange-500
-          text-white
-          hover:underline
-          p-2;
-  }
-  .tag {
-    @apply text-base italic text-gray-900 bg-gray-100
-            rounded-md px-1 pb-1 mx-1 my-2;
-  }
-</style>

@@ -31,15 +31,14 @@ useHead({
     { hid: 'canonical', rel: 'canonical', href: canonicalPath }
     ],
 }); 
-  
 </script>
 
 <template>
-  <main id="blog" class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
+  <main id="blog" class="mb-3 pt-3 mt-12 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
     <section id="welcome" class="text-black">
-        <div class="flex mt-1 mb-3">
-            <h1 class="mx-auto text-3xl">What's New</h1>
-        </div>
+      <div class="flex mt-3 mb-3">
+          <h1 class="mx-auto text-3xl">What's New</h1>
+      </div>
     </section>
     <section id="blogPosts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
       mt-2 sm:gap-10 mx-2 mb-1">
@@ -48,22 +47,20 @@ useHead({
           class="rounded-xl shadow-lg hover:shadow-2xl
           cursor-pointer bg-white bg-opacity-[.85]
           text-gray-800 mb-2">
-          
           <NuxtLink class="" :href="article._path">
             <div class="my-1 mt-4 mx-2">
               <img
-                      class="w-80 px-1 object-scale-down rounded-xl mx-auto thumbnail"
-                      :src="article.img"
-                            :alt="article.title"
-                        />
-                        <div class="">
-                            <h3 class="font-semibold ml-2 md:m-0 text-center text-xl pt-2">{{ article.title }}</h3>
-                            <!-- <p class="text-center font-normal -m-px pb-2">{{ article.alt }}</p> -->
-                        </div>
-                    </div>
-                </NuxtLink>
+                class="w-80 px-1 object-scale-down rounded-xl mx-auto thumbnail"
+                :src="article.img"
+                      :alt="article.title"
+                  />
+              <div class="">
+                  <h3 class="font-semibold ml-2 md:m-0 text-center text-xl pt-2">{{ article.title }}</h3>
+              </div>
             </div>
-        </ContentList>
+          </NuxtLink>
+        </div>
+      </ContentList>
     </section>
     <GetVids id="getVids"/>
   </main>

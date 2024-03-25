@@ -34,9 +34,9 @@ useHead({
 </script>
 
 <template>
-  <main class="mb-3 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
+  <main class="mb-3 mx-3 mt-12 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
     <div class="w-full text-left py-1 pt-1 px-2 text-black" >
-      <h1 class="text-3xl text-center">Contact Me</h1>
+      <h1 class="text-3xl text-center">Contact Me</h1> 
       <div id="profileImg"
           class="w-full sm:w-1/3 mx-auto mt-3 mb-2">
         <!-- profile image -->
@@ -49,10 +49,11 @@ useHead({
         adult content with. If you are interested in 
         collaborating, or shooting content together, don't hesitate to contact me.
       </p>
-      <div class=" text-center -mt-2 mb-3">
-        <UButton class="text-xl " size="md"
-        color="blue" to="mailto:bradbernsxxx@yahoo.com?subject=I am interested in working with you" target="_blank"
-          icon="i-heroicons-pencil-square" label="Contact Me"/>
+      <div class=" text-center -mt-1 mb-3">
+        <UButton class="text-xl text-black" size="md" color="white"
+          to="mailto:bradbernsxxx@yahoo.com?subject=I am interested in working with you" target="_blank"
+          icon="i-heroicons-pencil-square"
+          label="Contact Me"/>
       </div>
     </div>
     <GetVids />
