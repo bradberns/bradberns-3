@@ -50,7 +50,7 @@
       <ContentDoc v-slot="{ doc }">
         <div class="m-3 md:mx-4 rounded-md bg-neutral-50 
               bg-opacity-70">
-          <h1 class=" pt-4 mb-2 text-center text-3xl">
+          <h1 class=" pt-4 mb-2 font-normal text-center text-3xl">
             {{ doc.title }}
            </h1>
           <div id="blogPostDate" class=" text-center">

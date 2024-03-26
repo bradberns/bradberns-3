@@ -26,7 +26,7 @@ const links = [
 </script>
 
 <template>
-    <nav id="navigation" class=" fixed top-0 w-full bg-white">
+    <nav id="navigation" class=" fixed top-0 w-full bg-slate-100">
       <UHorizontalNavigation 
         :links="links"
         class=" pr-3 mx-2

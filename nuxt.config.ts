@@ -1,22 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  
   css: ['~/assets/css/main.css'],
+
   app: {
     head: { charset: 'utf-8',
     viewport: 'width=device-width, initial-scale=1',
           },
     // pageTransition: { name:'fade', mode: 'out-in'}
       },
+
   modules: [
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-icon',
   ],
+
   content: {
     
   },
+
   image: {
     // Options
     dir: 'public/img/',
@@ -39,5 +43,9 @@ export default defineNuxtConfig({
         quality: 'auto:best',
       }
   },
-}
+},
+
+  devtools: {
+    enabled: true
+  }
 })

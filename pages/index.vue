@@ -37,7 +37,7 @@ useHead({
   <main id="blog" class="mb-3 pt-3 mt-12 mx-3 rounded-lg py-2 bg-neutral-50 bg-opacity-70">
     <section id="welcome" class="text-black">
       <div class="flex mt-3 mb-3">
-          <h1 class="mx-auto text-3xl">What's New</h1>
+          <h1 class="mx-auto font-normal text-3xl">What's New</h1>
       </div>
     </section>
     <section id="blogPosts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
