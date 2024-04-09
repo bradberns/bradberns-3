@@ -4,7 +4,7 @@
   const baseUrl = 'https://bradberns.netlify.app';
   const canonicalPath = baseUrl + (path + '/').replace(/\/+$/, '/');
 // Page Head properties
-useHead({ 
+useHead({
   title: 'Home | BradBernsXXX',
   meta: [
     { name: 'author', content: 'Brad BernsXXX' },
