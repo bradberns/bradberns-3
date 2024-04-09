@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     'nuxt-icon',
-    '@dargmuesli/nuxt-cookie-control',
   ],
 
   content: {
