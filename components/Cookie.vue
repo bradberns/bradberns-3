@@ -5,7 +5,7 @@ const isOpen = ref(true)
 
 <template>
   <div>
-    <UModal class="cookies-banner text-center text-white md:text-black"
+    <UModal class="cookies-banner text-center text-black"
       v-model="isOpen" prevent-close>
       <div class="p-4 md:text-md sm:text-sm">
         By clicking ”Accept”, you agree that 
@@ -14,7 +14,7 @@ const isOpen = ref(true)
       </span> and to the storing of cookies on your device to
       enhance site navigation and analitics.
         <div class="mt-2 text-center">
-          <UButton class="mr-2 rounded-md text-white" size="lg"
+          <UButton class="mr-8 rounded-md text-white" size="lg"
               label="Accept" color="green" @click="isOpen = false" />
           <UButton class="rounded-md text-white" size="lg" 
           label="Decline" color="red" to="http://google.com" />
