@@ -1,6 +1,13 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
+// tailwind.config
+module.exports = {
+  // ...
+  plugins: [
+    require('tailwindcss-animated')
+  ],
+}
 export default <Partial<Config>>{
   theme: {
     extend: {

@@ -50,15 +50,19 @@
       <ContentDoc v-slot="{ doc }">
         <div class="m-3 md:mx-4 rounded-md bg-neutral-50 
               bg-opacity-70">
-          <h1 class=" pt-4 mb-2 font-normal text-center text-3xl">
+          <h1 class="animate-fade animate-once 
+            animate-duration-[3000ms] animate-delay-[1000ms]
+            pt-4 mb-2 font-normal text-center text-3xl">
             {{ doc.title }}
            </h1>
-          <div id="blogPostDate" class=" text-center">
+          <div id="blogPostDate" class="animate-fade animate-once 
+            animate-duration-[3000ms] animate-delay-[1000ms] text-center">
             <span class="tag">
               {{ doc.date }} 
             </span>
           </div> 
-          <div id="blogPostImage" class="mx-4">
+          <div id="blogPostImage" class=" bottom-0 animate-fade animate-once 
+            animate-duration-[3000ms] animate-delay-[1500ms] mx-4">
             <img
               :src="doc.img"
               :alt="doc.alt"
