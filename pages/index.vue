@@ -49,7 +49,7 @@ useHead({
           text-gray-800 mb-2">
           <NuxtLink class="" :href="article._path">
             <div class="my-1 mt-4 mx-2">
-              <img rel="preload" loading="lazy"
+              <img rel="preload" 
                 class="w-80 px-1 object-scale-down rounded-xl mx-auto thumbnail"
                 :src="article.img"
                       :alt="article.title"
