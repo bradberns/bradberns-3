@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-  body{
+  /* body{
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight:300;
   font-style: normal;
-}
+} */
 
     h3 {
         @apply text-3xl py-2  font-light text-center;

@@ -63,7 +63,7 @@
           </div> 
           <div id="blogPostImage" class=" bottom-0 animate-fade animate-once 
             animate-duration-[3000ms] animate-delay-[1500ms] mx-4">
-            <img
+            <img loading="lazy"
               :src="doc.img"
               :alt="doc.alt"
               class="rounded-lg w-9/12 mx-auto pt-5"/>
