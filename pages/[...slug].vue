@@ -21,6 +21,7 @@
   useHead({
     titleTemplate: '%s | Brad BernsXXX',
     meta: [
+    { name: 'lang', content: 'en'},
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: data.value?.article?.description },
     { name: "robots", content: "index, follow"},

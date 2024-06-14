@@ -7,6 +7,7 @@
 useHead({ 
   title: 'About Me | BradBernsXXX',
   meta: [
+    { name: 'lang', content: 'en'},
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Creator of @camgasmic. Always looking for women 18 or over to create original adult content with.' },
     { name: "robots", content: "index, follow"},

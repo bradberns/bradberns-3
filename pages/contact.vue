@@ -7,6 +7,7 @@
 useHead({ 
   title: 'Contact Me | BradBernsXXX',
   meta: [
+    { name: 'lang', content: 'en'},
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Contact me if you are interested in creating content.' },
     { name: "robots", content: "index, follow"},

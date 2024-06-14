@@ -7,6 +7,7 @@
 useHead({
   title: 'Home | BradBernsXXX',
   meta: [
+    { name: 'lang', content: 'en'},
     { name: 'author', content: 'Brad BernsXXX' },
     { name: 'description', content: 'Whats New' },
     { name: "robots", content:"index, follow"},
@@ -47,15 +48,15 @@ useHead({
           class="rounded-xl shadow-lg hover:shadow-2xl
           cursor-pointer bg-white bg-opacity-[.85]
           text-gray-800 mb-2">
-          <NuxtLink class="" :href="article._path">
+          <NuxtLink rel="preload" as="image" :href="article._path">
             <div class="my-1 mt-4 mx-2">
-              <img rel="preload" 
+              <img width="500" height="375"
                 class="w-80 px-1 object-scale-down rounded-xl mx-auto thumbnail"
                 :src="article.img"
-                      :alt="article.title"
+                :alt="article.alt"
                   />
               <div class="">
-                  <h3 class="font-semibold ml-2 md:m-0 text-center text-xl pt-2">{{ article.title }}</h3>
+                  <h2 class="font-semibold ml-2 md:m-0 text-center text-xl pt-2">{{ article.title }}</h2>
               </div>
             </div>
           </NuxtLink>
