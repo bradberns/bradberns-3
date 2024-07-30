@@ -5,7 +5,7 @@ const isOpen = ref(true)
 
 <template>
   <div>
-    <UModal class="cookies-banner text-center text-black"
+    <UModal role="alertdialog" name="cookie banner" class="cookies-banner text-center text-black"
       v-model="isOpen" prevent-close>
       <div class="p-4 md:text-md sm:text-sm">
         By clicking ”Accept”, you agree that 
