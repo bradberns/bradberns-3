@@ -1,4 +1,54 @@
 <script lang="ts" setup>
+  import { ref } from 'vue';
+
+  const form = ref({
+    access_key: "d300a0c4-7943-4850-8a9e-7ead4627c05d",
+    subject: "New Submission from Web3Forms",
+    name: "",
+    email: "",
+    message: "",
+
+  });
+  const result = ref("");
+  const status = ref("");
+
+  const submitForm = async () => {
+  result.value = "Please wait...";
+  try {
+    const response = await $fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: form.value,
+    });
+
+    console.log(response); // You can remove this line if you don't need it
+
+    result.value = response.message;
+
+    if (response.status === 200) {
+      status.value = "success";
+    } else {
+      console.log(response); // Log for debugging, can be removed
+      status.value = "error";
+    }
+  } catch (error) {
+    console.log(error); // Log for debugging, can be removed
+    status.value = "error";
+    result.value = "Something went wrong!";
+  } finally {
+    // Reset form after submission
+    form.value.name = "";
+    form.value.email = "";
+    form.value.message = "";
+
+    // Clear result and status after 5 seconds
+    setTimeout(() => {
+      result.value = "";
+      status.value = "";
+    }, 5000);
+  }
+};
+
   const { path } = useRoute(); 
 // Set the meta
   const baseUrl = 'https://bradberns.netlify.app';
@@ -51,10 +101,20 @@ useHead({
         collaborating, or shooting content together, don't hesitate to contact me.
       </p>
       <div class=" text-center -mt-1 mb-3">
-        <UButton class="text-xl text-black" size="md" color="white"
+        <!-- <UButton class="text-xl text-black" size="md" color="white"
           to="mailto:bradbernsxxx@yahoo.com?subject=I am interested in working with you" target="_blank"
           icon="i-heroicons-pencil-square"
-          label="Contact Me"/>
+          label="Contact Me"/> -->
+          <form @submit.prevent="submitForm">
+            <input class="mb-2 h-8 w-1/4 px-2 rounded" type="text" name="name" v-model="form.name"/>
+            <br>
+            <input class="mb-2 h-8 w-1/4 px-2 rounded" type="email" name="email"  v-model="form.email"/>
+            <br>
+            <textarea class="mb-2 h-12 w-1/4 px-2 rounded" name="message" v-model="form.message"></textarea>
+            <br>
+            <button class=" hover:bg-orange-500 hover:text-white 
+              bg-white w-1/5 rounded" type="submit">Send Message</button>
+          </form>
       </div>
     </div>
     <GetVids />
