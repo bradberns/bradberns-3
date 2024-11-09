@@ -106,17 +106,17 @@ useHead({
           icon="i-heroicons-pencil-square"
           label="Contact Me"/> -->
           <form @submit.prevent="submitForm">
-            <input class="mt-3 mb-2 h-8 w-1/2 sm:w-1/3 px-2 rounded bg-white text-lg" 
+            <input class="mt-3 mb-2 h-9 w-2/3 sm:w-1/4 px-2 rounded bg-white text-xl" 
               type="text" name="name" v-model="form.name" placeholder="name" />
             <br>
-            <input class="mb-2 h-8 w-1/2 sm:w-1/3 px-2 rounded bg-white text-lg" 
+            <input class="mb-2 h-9 w-2/3 sm:w-1/4 px-2 rounded bg-white text-xl" 
               type="email" name="email"  v-model="form.email" placeholder="email"/>
             <br>
-            <textarea class="mb-2 h-12 w-1/2 sm:w-1/3 px-2 rounded bg-white text-lg" 
+            <textarea class="mb-2 h-20 w-2/3 sm:w-1/4 px-2 rounded bg-white text-xl" 
               name="message" v-model="form.message" placeholder="message"></textarea>
             <br>
-            <button class=" hover:bg-orange-500 hover:text-white text-lg 
-              bg-white w-1/4 rounded" type="submit">Send</button>
+            <button class=" hover:bg-orange-500 hover:text-white text-xl 
+              bg-white w-1/4 sm:w-1/6 rounded" type="submit">Send</button>
           </form>
       </div> 
     </div>
