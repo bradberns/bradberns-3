@@ -7,7 +7,7 @@ const isOpen = ref(true)
   <div>
     <UModal role="alertdialog" name="cookie banner" class="cookies-banner text-center text-black"
       v-model="isOpen" prevent-close>
-      <div class="p-4 md:text-md sm:text-sm">
+      <div class="p-4 md:text-md sm:text-sm bg-white">
         By clicking ”Accept”, you agree that 
         <span class=" underline font-semibold text-red-500"> 
         you are over the age of 21
