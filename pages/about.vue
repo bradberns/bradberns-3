@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import ContactModal from '~/components/ContactModal.vue';
+
   const { path } = useRoute();
 // Set the meta
   const baseUrl = 'https://bradberns.netlify.app';
@@ -79,6 +81,14 @@ useHead({
           Faster that you can say "What's wrong."
         </p>
     </div>
-    <GetVids />
+    <div class="my-2 grid grid-cols-1 md:grid-cols-2">
+      <div class=" text-center mx-auto my-2">
+        <ContactModal />
+      </div>
+      <div class="text-center mx-auto my-2">
+        <GetVids />
+      </div>
+      
+    </div>
   </main>
 </template>

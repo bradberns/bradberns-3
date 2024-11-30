@@ -3,14 +3,14 @@
 </script>
 
 <template>
-    <div id="aboutPopOverButton" class="mx-auto">
-        <div class=" md:mx-36 mx-12">
+    <div id="aboutPopOverButton" class="mx-auto text-center">
+        <div class="">
             <UPopover :popper="{ placement: 'top' }">
-                <UButton class="text-xl mb-2" size="md"
-                    block color="orange"
-                    label="Get your videos here"/>
+                <UButton class="text-lg mb-2" size="md"
+                    color="orange"
+                    label="My videos"/>
                     <template #panel>
-                        <div class="p-4">
+                        <div class="p-4 bg-white">
                             <div>
                                 <CTA />
                             </div>
