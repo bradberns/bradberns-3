@@ -3,7 +3,7 @@
 
   const form = ref({
     access_key: "d300a0c4-7943-4850-8a9e-7ead4627c05d",
-    subject: "New Submission from Web3Forms",
+    subject: "New Message from Brad Berns Website",
     name: "",
     email: "",
     message: "",
@@ -20,8 +20,6 @@
       headers: { 'Content-Type': 'application/json' },
       body: form.value,
     });
-
-    console.log(response); // You can remove this line if you don't need it
 
     result.value = response.message;
 
