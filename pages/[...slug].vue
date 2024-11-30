@@ -76,11 +76,3 @@
     </article>
   </main>
 </template>
-
-<style scoped>
-.b-links {
-        @apply text-sm md:text-lg mt-3 hover:underline 
-        font-medium p-1
-    }
-
-</style>

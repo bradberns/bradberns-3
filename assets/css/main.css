@@ -17,7 +17,7 @@
         @apply text-2xl text-center mb-3 ;
     }
     p {
-        @apply text-black mx-4 pl-2 text-left indent-2 mb-3 text-xl;
+        @apply text-black mx-4 pl-2 text-left indent-2 mb-3 text-base md:text-xl;
     }
     .links {
         @apply text-base lg:text-lg rounded-lg bg-orange-500
