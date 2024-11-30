@@ -20,7 +20,7 @@
         @apply text-black mx-4 pl-2 text-left indent-2 mb-3 text-xl;
     }
     .links {
-        @apply text-lg rounded-lg bg-orange-500
+        @apply text-base lg:text-lg rounded-lg bg-orange-500
             text-white border border-white/50
             hover:underline hover:border-white
             sm:mx-1 mx-2 p-2;
