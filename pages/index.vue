@@ -63,6 +63,13 @@ useHead({
         </div>
       </ContentList>
     </section>
-    <GetVids id="getVids"/>
+    <div class="my-2 grid grid-cols-1 md:grid-cols-2">
+      <div class=" text-center mx-auto my-2">
+        <ContactModal />
+      </div>
+      <div class="text-center mx-auto my-2">
+        <GetVids />
+      </div>
+    </div>
   </main>
 </template>

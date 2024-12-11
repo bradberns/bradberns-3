@@ -88,7 +88,6 @@ useHead({
       <div class="text-center mx-auto my-2">
         <GetVids />
       </div>
-      
     </div>
   </main>
 </template>

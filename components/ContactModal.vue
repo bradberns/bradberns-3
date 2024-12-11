@@ -52,29 +52,35 @@ try {
 
 <template>
   <div class="mx-auto ">
-    <button class="text-white mr-2 bg-orange-500 rounded-md mx-1 p-2" @click="open = true">Open Modal</button>
+    <button class="text-gray-900 text-lg mr-2 bg-orange-400 rounded-md mx-1 p-2" @click="open = true">Contact Me</button>
   </div>
 
-  <div v-if="open" class="modal rounded-lg bg-white top-[45%] lg:top-[20%]">
+  <div v-if="open" class="modal border border-orange-700 rounded-lg bg-white top-[45%] lg:top-[20%]">
     <div id="header">
-      <div class="text-black text-center text-xl underline">Contact Me</div>
+      <div class="text-black text-center text-2xl">Contact Me</div>
+      <div class=" text-sm mx-2 text-black italic">
+        Always looking for women 18 or over to create original adult content with.
+         If you are interested in collaborating, or shooting content together, 
+         don't hesitate to contact me.
+      </div>
       
       <form @submit.prevent="submitForm">
-            <input class="mt-1 mb-2 h-9 border border-blue-500  w-9/12 px-2 rounded bg-white text-base" 
+            <input class="mt-1 mb-2 h-9 border border-blue-500  w-9/12 px-2 rounded bg-white text-xl" 
               type="text" name="name" v-model="form.name" placeholder="name" />
             <br>
-            <input class="mb-2 h-9 w-9/12 border border-blue-500  px-2 rounded bg-white text-base" 
+            <input class="mb-2 h-9 w-9/12 border border-blue-500  px-2 rounded bg-white text-xl" 
               type="email" name="email"  v-model="form.email" placeholder="email"/>
             <br>
-            <textarea class="mb-2 h-20  w-9/12 border border-blue-500  px-2 rounded bg-white text-base" 
+            <textarea class="mb-2 h-20  w-9/12 border border-blue-500  px-2 rounded bg-white text-xl" 
               name="message" v-model="form.message" placeholder="message"></textarea>
             <br>
-            <button class="bg-orange-500 py-1 px-2 text-white text-center text-xl 
-               w-1/4 sm:w-1/6 rounded" type="submit">Send</button>
+            <button class="bg-orange-400 py-1 px-3 text-gray-900 text-xl 
+              rounded" type="submit">Send</button>
           </form>
     </div>
-    <div class=" text-left">
-      <button class="bg-orange-500 py-.05 px-2 ml-1 mb-1 lg:text-lg rounded-lg text-white" @click="open = false">X</button>
+    <div class="text-left">
+      <button class="bg-orange-400 py-.05 px-2 ml-1 
+        mb-1 text-xl rounded-lg text-gray-900" @click="open = false">X</button>
     </div>
   </div>
 </template>
@@ -88,5 +94,8 @@ try {
   width: 350px;
   height: auto;
   margin-left: -175px;
+}
+input textarea{
+  @apply text-gray-500
 }
 </style>

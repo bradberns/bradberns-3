@@ -115,9 +115,13 @@ useHead({
             <br>
             <button class=" hover:bg-orange-500 hover:text-white text-xl 
               bg-white w-1/4 sm:w-1/6 rounded" type="submit">Send</button>
-          </form>
-      </div> 
+          </form>         
+      </div>
+      <div class="my-2 grid grid-cols-1">
+        <div class="text-center mx-auto my-2">
+          <GetVids />
+        </div>
+      </div>
     </div>
-    <GetVids />
   </main>
 </template>

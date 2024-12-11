@@ -4,7 +4,7 @@
 
 <template>
     <div id="aboutPopOverButton" class="mx-auto text-center">
-        <div class="">
+        <div class="text-center">
             <UPopover :popper="{ placement: 'top' }">
                 <UButton class="text-lg mb-2" size="md"
                     color="orange"
